@@ -16,7 +16,7 @@ while True:
         description = input('> ')
         Task_manager.add_task(description)
     elif menu_choice == '2':
-        break
+        Task_manager.list_tasks()
     elif menu_choice == '3':
         sys.exit()
     else:
