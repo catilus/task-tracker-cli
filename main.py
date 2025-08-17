@@ -1,4 +1,6 @@
 import sys
+from task_manager import Task_manager
+from task import Task
 # Main program
 
 # Display menu until user chooses or exits program
@@ -10,7 +12,9 @@ while True:
     menu_choice = input('Enter 1, 2, 3 > ')
 
     if menu_choice == '1':
-        break
+        print("Enter a description for your task:")
+        description = input('> ')
+        Task_manager.add_task(description)
     elif menu_choice == '2':
         break
     elif menu_choice == '3':
