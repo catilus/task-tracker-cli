@@ -1,2 +1,3 @@
 # task-tracker-cli
-Task tracker CLI
+Mini-project combining everything learned during Week 1 - 2 of QA Automation Engineer roadmap.
+
