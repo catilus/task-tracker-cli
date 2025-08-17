@@ -11,7 +11,9 @@ class Task_manager:
     
     @classmethod
     def list_tasks(cls):
+        print('List of tasks: ')
         for task in cls.tasks:
-            print(task.id)
-            print(task.description)
-            print(task.completed)
+            if task.completed == True:
+                print(str(task.id) + ' - ' + task.description + '. Completed: Yes')
+            else:
+                print(str(task.id) + ' - ' + task.description + '. Completed: No')
